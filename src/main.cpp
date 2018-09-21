@@ -65,15 +65,15 @@ bool setWindowDimensions(ofGLFWWindowSettings& settings, int windowsNum) {
 //========================================================================
 int main() {
 	ofGLFWWindowSettings settings;
-//	setFirstWindowDimensions(settings);
+	//setFirstWindowDimensions(settings);
 	//settings.width = 1200;
- //	settings.height = 600;
+	//settings.height = 600;
     settings.width = 1600; // Default settings
     settings.height = 800;
     settings.setPosition(ofVec2f(0, 0));
 	settings.resizable = true;
 	settings.decorated = true;
-	settings.title = "Magic-Sand " + MagicSandVersion;
+	//settings.title = "Magic-Sand " + MagicSandVersion;
 	shared_ptr<ofAppBaseWindow> mainWindow = ofCreateWindow(settings);
     
 	setWindowDimensions(settings, 0);
